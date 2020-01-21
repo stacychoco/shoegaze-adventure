@@ -1,0 +1,40 @@
+
+/*stacy_writings*/
+
+*{
+margin:0 0 0 0; /*top right bottom left*/
+padding:0 0 0 0;
+font-family: 'Solway', serif;
+}
+
+body {
+  background-image: url("background/start.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#p1{
+	margin-top:7vw;
+}
+
+#last{
+	margin-bottom:7vw;
+}
+
+p{
+	margin: 3vw 13vw 0 13vw;
+	color: #fbe3df;
+	letter-spacing: 0.1vw;
+	font-size: 2.5vw;
+	text-align: justfied;
+	font-weight: lighter;
+}
+
+a:hover, a:visited:hover{
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;}
+a:link{color:#c3f6f2;}
+a:hover{color:#fbe3df;}
+a:visited{color:#c3f6f2;}
+a:visited:hover{color:#fbe3df;}

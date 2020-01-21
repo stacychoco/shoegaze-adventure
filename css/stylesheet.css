@@ -1,0 +1,697 @@
+*{
+margin:0 0 0 0; /*top right bottom left*/
+padding:0 0 0 0;
+font-family: 'Molly Type', serif;
+color:white;
+letter-spacing:0.05vw;
+}
+
+body{
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+@font-face {
+  font-family: Molly Type;
+  src: url(mollytype.ttf);
+}
+
+p{
+	margin-bottom:2vw;
+}
+
+iframe{
+	width:23vw;
+	height:23vw;
+	margin-bottom:-8vw;
+	display:none;
+}
+
+.album_cover{
+	margin-top:0.1vw;
+}
+
+.play_button{
+	width:32%;
+	margin-left: auto;
+    margin-right: auto;
+	margin-top:-15vw;
+	opacity:0;
+}
+
+.container{
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+}
+
+.container:hover .album_cover{
+	filter: brightness(80%);
+}
+
+.container:hover .play_button{
+	opacity:1;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	cursor:pointer;
+	filter: brightness(100%);
+}
+
+.row{
+margin-left:2vw;
+margin-top:2vw;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column1{
+	float:left;
+	width:9%;
+	margin-left:1vw;
+}
+
+.column2{
+  float: left;
+  width: 23%;
+  color:#ed2a8c;
+  text-align:center;
+  font-weight: bold;
+  margin-left:5vw;
+  margin-top:6.4vw;
+}
+
+.column3{
+  float: left;
+  width: 45%;
+  margin-left:6vw;
+  color:white;
+  font-size:2.2vw;
+  margin-top:6vw;
+}
+
+.icon_row{
+	margin-top:2vw;
+}
+
+.icon_row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.icon_column1{
+  float: left;
+  width: 18%;
+  margin-right:4vw;
+}
+
+.icon_column2{
+  float: left;
+  width: 18%;
+  margin-right:4vw;
+}
+
+.icon_column3{
+  float: left;
+  width: 18%;
+  margin-top:1vw;
+}
+
+.icon_column1 p,.icon_column2 p, .icon_column3 p{
+	position:relative;
+	text-align:center;
+	bottom:-1vw;
+	visibility:hidden;
+	-webkit-transition-duration: 0.2s; /* Safari */
+	transition-duration: 0.2s;
+	font-size: 1.25vw;
+}
+
+.icon_column1:hover p,.icon_column2:hover p,.icon_column3:hover p{
+	transform: scale(1.1);
+	visibility:visible;
+	-webkit-transition-duration: 0.2s; /* Safari */
+	transition-duration: 0.2s;
+}
+.icon:hover{
+transform: scale(1.1);
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+}
+
+.icon{
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+}
+
+.info{
+	margin-bottom:1vw;
+	margin-top:1vw;
+}
+
+#album{
+	font-size:3.3vw;
+	margin-top:9vw;
+}
+
+#artist{
+	font-size:2.3vw;
+}
+
+#extra{
+	font-size:1.9vw;
+}
+
+#main_genres{
+	font-weight: bold;
+}
+
+#sub_genres{
+	margin-left:8vw;
+	font-size:1.9vw;
+	margin-top:-1.5vw;
+}
+
+#tip{
+	color:white;
+	font-size:1.6vw;
+	margin-left:15vw;
+	margin-right:70vw;
+	margin-top:2.2vw;
+	margin-bottom:-6.5vw;
+}
+
+a{
+	font-size:1.8vw;
+}
+a:hover, a:visited:hover{
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;}
+a:link{color:#c3f6f2;}
+a:hover{color:#fbe3df;}
+a:visited{color:#c3f6f2;}
+a:visited:hover{color:#fbe3df;}
+
+/*backgrounds and individual icons*/
+.alvvays {
+	background-image: url("background/alvvays.png");
+}
+
+#alvvays_icon{
+	width:8%;
+}
+
+.wild_nothing{
+	background-image: url("background/wild_nothing.png");
+}
+
+#wild_nothing_icon{
+	width:11%;
+}
+
+#moon{
+	margin-top:1.5vw;
+	width:22%;
+}
+
+.beach_house{
+	background-image: url("background/beach_house.png");
+}
+
+#teen_dream_icon{
+	width:8%;
+}
+
+.just_for_a_day{
+  background-image: url("background/justforaday.png");
+}
+
+#justforaday_icon{
+	width:7%;
+}
+
+.heaven_lasvegas{
+  background-image: url("background/lasvegas.png");	
+}
+
+#wings{
+	margin-top:2vw;
+	width:22%;
+}
+
+.love_spirals{
+  background-image: url("background/love_spirals.png");	
+}
+
+#love_spirals_icon{
+	width:10.5%;
+	margin-top:1vw;
+}
+
+#eye{
+	width:16%;
+	margin-top:2.5vw;
+}
+
+.loveless{
+  background-image: url("background/loveless.png");	
+}
+
+.loveless .icon_column2, .icon_column3{
+	width: 17%;
+}
+
+.loveless .icon_column3{
+	margin-top: 0.5vw;
+}
+
+#loveless_icon{
+	width:6%;
+}
+
+.ride_nowhere{
+  background-image: url("background/ride.png");	
+}
+
+#ride_icon{
+	width:7%;
+}
+
+.slowdive_souvlaki{
+  background-image: url("background/slowdive.png");	
+}
+
+#souvlaki_icon{
+	width:6.5%;
+}
+
+#happy_cloud{
+	width:20%;
+	margin-top:2vw;
+}
+
+#dreamcatcher_2{
+	width:14%;
+}
+.radio_dept{
+	background-image: url("background/radio_dept.jpg");	
+}
+
+#paper_planes{
+	width:20%;
+}
+
+.galaxie_500{
+	background-image: url("background/galaxie_500.jpg");	
+}
+
+.bloom{
+	background-image: url("background/bloom.jpg");	
+}
+
+.pygmalion{
+	background-image: url("background/pygmalion.jpg");	
+}
+
+#pygmalion_icon{
+	width:7.5%;
+}
+
+#sleeping{
+	width:22%;
+}
+
+.yolatengo_house{
+	background-image: url("background/yolatengo1.jpg");		
+}
+
+#yolatengo_text h1{
+	font-size:2.1vw;
+}
+
+.spirit_youth{
+	background-image: url("background/depre_guild1.jpg");
+}
+
+#leaves{
+	width:19.5%;
+	margin-top:3vw;
+}
+
+.deerhunter{
+	background-image: url("background/deerhunter.jpg");
+}
+
+.deerhunter .row{
+	margin-top:0.7vw;
+}
+
+.deerhunter .column1{
+	width:7%;
+	margin-top:1vw;
+}
+
+.deerhunter .icon_column1{
+	width:15%;
+}
+
+.the_pains{
+	background-image: url("background/the_pains.jpg");
+}
+
+#the_pains_icon{
+	width:7%;
+}
+
+#the_pains_text h1{
+	font-size:2.8vw;
+}
+
+#the_pains_text h2{
+	font-size:2.2vw;
+}
+
+.asobi_seksu{
+	background-image: url("background/asobi_seksu.jpg");
+}
+
+.asobi_seksu .column1{
+	width:7%;
+}
+
+.asobi_seksu .icon_column1{
+	width:15%;
+}
+
+.in_her_gentle_jaws{
+	background-image: url("background/in_her_gentle_jaws.jpg");
+}
+
+.in_her_gentle_jaws .column1{
+	width:7%;
+}
+
+#jaws_text h1{
+	font-size:2.8vw;
+}
+
+#jaws_text h2{
+	font-size:2.4vw;
+}
+
+.candy_claws{
+	background-image: url("background/candy_claws.jpg");
+}
+
+#citrus{
+	width:15%;
+	margin-top:1.5vw;
+}
+
+.sweet_trip{
+	background-image: url("background/sweet_trip.jpg");
+}
+
+.sweet_trip .column1{
+	width:8%;
+	margin-top:1.5vw;
+}
+
+.sweet_trip .row{
+	margin-top:0.2vw;
+}
+
+#sweet_trip_text h1{
+	font-size:2.8vw;
+}
+
+.going_blank_again{
+	background-image: url("background/going_blank_again.jpg");
+}
+
+.going_blank_again .column1{
+	width:8%;
+}
+
+.going_blank_again .row{
+	margin-top:1vw;
+}
+
+#going_blank_text h1{
+	font-size:2.8vw;
+}
+
+.you_made_me_realise{
+	background-image: url("background/you_made_me_realise.jpg");
+}
+
+.isnt_anything{
+	background-image: url("background/isnt_anything.jpg");
+}
+
+#skull{
+	width:11%;
+	margin-left:-1vw;
+}
+
+#heart{
+	width:12%;
+	margin-top:-0.3vw;
+}
+
+.yolatengo_heart{
+	background-image: url("background/yolatengo2.jpg");
+}
+
+.yolatengo_heart .column1{
+	width:6%;
+}
+
+.psychocandy{
+	background-image: url("background/jesus_and_mary_chain.jpg");
+}
+
+.psychocandy .icon_column1{
+	width:16%;
+}
+
+.swirlies{
+	background-image: url("background/swirlies.jpg");
+}
+
+.swirlies .column1{
+	width:5.5%;
+}
+
+.swirlies .icon_column1{
+	width:16%;
+}
+
+.boces{
+	background-image: url("background/mercury_rev.jpg");
+}
+
+.boces .column1{
+	width:7.5%;
+}
+
+.ringo_deathstarr{
+	background-image: url("background/ringo.jpg");
+}
+
+.ringo_deathstarr .column1{
+	width:7.5%;
+	margin-top:0.8vw;
+}
+
+.astrobrite{
+	background-image: url("background/astrobrite.jpg");
+}
+
+.astrobrite .column1{
+	width:8%;
+}
+
+.astrobrite .icon_column1{
+	width:19%;
+	margin-top:0.8vw;
+}
+
+.astrobrite .icon_column2{
+	width:20%;
+	margin-top:0.8vw;
+}
+
+.mbv_mbv{
+	background-image: url("background/mbv_mbv.jpg");
+}
+
+.mbv_mbv .column1{
+	width:11%;
+}
+
+.mbv_mbv .icon_column1{
+	width:15%;
+}
+
+.lsd{
+	background-image: url("background/lsd.jpg");
+}
+
+.lsd .column1{
+	width:7%;
+}
+
+#lsd_text h1{
+	font-size:2.8vw;
+}
+
+#lsd_text h2{
+	font-size:1.7vw;
+}
+
+#tv{
+	width:22%;
+	margin-top:2vw;
+}
+
+.in_her_gentle_jaws .column1{
+	width:10.5%;
+}
+
+.luminous_orange{
+	background-image: url("background/luminous_orange.jpg");
+}
+
+.luminous_orange .column1{
+	width:8.5%;
+}
+
+.luminous_orange .icon_column1{
+	width:20%;
+	margin-top:1vw;
+}
+
+.kinoko_teikoku{
+	background-image: url("background/kinoko_teikoku.jpg");
+}
+
+.kairon_irse{
+	background-image: url("background/kairon_irse.jpg");
+}
+
+.kairon_irse .icon_column1{
+	width:21%;
+}
+
+.ride_nowhere .icon_column1{
+	width:16%;
+}
+
+.chapterhouse{
+	background-image: url("background/chapterhouse.jpg");
+}
+
+.chapterhouse .column1{
+	width:7.7%;
+	margin-top:0.5vw;
+}
+
+.chapterhouse .icon_column2{
+	width:17%;
+}
+
+.natural_lemons{
+	background-image: url("background/natural_lemons.png")
+}
+
+.natural_lemons .icon_column1{
+	width:20%;
+}
+
+#natural_lemons_text h1{
+	font-size:2.8vw;
+}
+
+#natural_lemons_text h2{
+	font-size:2vw;
+}
+
+.alcest{
+	background-image: url("background/alcest.jpg")
+}
+
+.alcest .column1{
+	width:10.5%;
+	margin-top:1vw;
+}
+
+.diiv{
+	background-image: url("background/diiv.jpg")
+}
+
+.sunbather{
+	background-image: url("background/deafheaven.jpg")
+}
+
+.deathconsciousness{
+	background-image: url("background/have_a_nice_life.jpg")
+}
+
+.deathconsciousness #album{
+	font-size:2.7vw;
+}
+
+.deathconsciousness #artist{
+	font-size:2.2vw;
+}
+
+.skywave{
+	background-image: url("background/skywave.jpg")
+}
+
+.bury_strangers{
+	background-image: url("background/bury_strangers.jpg")
+}
+
+.medicine{
+	background-image: url("background/medicine.jpg")
+}
+
+.medicine .icon_column1{
+	width:12%;
+}
+
+.medicine .icon_column2{
+	width:15%;
+}
+
+.the_goslings{
+	background-image: url("background/the_goslings.jpg")
+}
+
+
+.the_goslings .column1{
+	width:7.5%;
+}
+
+.the_goslings .play_button{
+	width:32%;
+	margin-left: auto;
+    margin-right: auto;
+	margin-top:-13vw;
+	opacity:0;
+}
+
+.alcest .play_button{
+	width:32%;
+	margin-left: auto;
+    margin-right: auto;
+	margin-top:-13.5vw;
+	opacity:0;
+}

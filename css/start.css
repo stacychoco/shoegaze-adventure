@@ -1,0 +1,55 @@
+
+/*start*/
+
+*{
+margin:0 0 0 0; /*top right bottom left*/
+padding:0 0 0 0;
+font-family: 'Solway', serif;
+}
+
+body {
+  background-image: url("background/start.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1{
+	margin: 8vw 16vw 0 18vw;
+	color: #fbe3df;
+	letter-spacing: 0.2vw;
+	font-size: 3.3vw;
+	text-align: justfied;
+	font-weight: lighter;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1, .column2 {
+  font-size: 2.5vw;
+  float: left;
+  width: 24%;
+  margin: 8vw 0 0 0;
+}
+
+.column1{
+	margin-left: 18vw;
+}
+
+.column2{
+	margin-left: 14vw;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear:both;
+}
+
+a:hover, a:visited:hover{
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;}
+a:link{color:#c3f6f2;}
+a:hover{color:#fbe3df;}
+a:visited{color:#c3f6f2;}
+a:visited:hover{color:#fbe3df;}
