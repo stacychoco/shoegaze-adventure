@@ -1,2 +1,2 @@
-# shoegaze-adventure
+# Shoegaze Adventure
 A Shoegaze Music Adventure
